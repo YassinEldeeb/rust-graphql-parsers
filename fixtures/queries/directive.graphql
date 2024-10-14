@@ -2,5 +2,17 @@ query GetUser($shouldInclude: Boolean!) {
   user(id: "1") {
     id
     name @include(if: $shouldInclude)
+    name2 @include(if: $shouldInclude)
+    name3 @include(if: $shouldInclude)
+    name4 @include(if: $shouldInclude)
+    name5 @include(if: $shouldInclude)
+    name6 @include(if: $shouldInclude)
+    name7 @include(if: $shouldInclude)
+    name8 @include(if: $shouldInclude)
+    name9 @include(if: $shouldInclude)
+    name10 @include(if: $shouldInclude)
+    name11 @include(if: $shouldInclude)
+    name12 @include(if: $shouldInclude)
+    name13 @include(if: $shouldInclude)
   }
 }
