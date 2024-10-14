@@ -1,7 +1,58 @@
 mutation UpdateUser {
-  updateUser(input: { id: "1", name: "John Doe", age: 30 }) {
+  updateUser(
+    input: {
+      id: "1"
+      name: "John Doe"
+      age: 30
+      email: "john.doe@example.com"
+      phone: "+123456789"
+      address: {
+        street: "123 Main St"
+        city: "New York"
+        state: "NY"
+        zip: "10001"
+      }
+      occupation: "Software Engineer"
+      company: "Tech Corp"
+      website: "https://johndoe.dev"
+      social: { twitter: "@johndoe", linkedin: "linkedin.com/in/johndoe" }
+      preferences: { notifications: true, darkMode: false, language: "en" }
+      bio: "Developer with a passion for open source."
+      joinedDate: "2020-01-15"
+      lastLogin: "2024-10-10"
+      status: "active"
+      subscriptionTier: "pro"
+      achievements: ["Published 10+ articles", "Speaker at 5 conferences"]
+    }
+  ) {
     id
     name
     age
+    email
+    phone
+    address {
+      street
+      city
+      state
+      zip
+    }
+    occupation
+    company
+    website
+    social {
+      twitter
+      linkedin
+    }
+    preferences {
+      notifications
+      darkMode
+      language
+    }
+    bio
+    joinedDate
+    lastLogin
+    status
+    subscriptionTier
+    achievements
   }
 }

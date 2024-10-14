@@ -5,7 +5,31 @@
       ...ReviewFields
     }
   }
+  product(id: "345") {
+    ...ProductFields
+    reviews {
+      ...ReviewFields
+    }
+  }
+  product(id: "1123") {
+    ...ProductFields
+    reviews {
+      ...ReviewFields
+    }
+  }
   user(id: "456") {
+    ...UserFields
+    friends {
+      ...UserFriendFields
+    }
+  }
+  user(id: "4156") {
+    ...UserFields
+    friends {
+      ...UserFriendFields
+    }
+  }
+  user(id: "4456") {
     ...UserFields
     friends {
       ...UserFriendFields

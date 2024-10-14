@@ -1,11 +1,109 @@
-query GetUser {
+query GetUser1 {
   user(id: "1") {
     id
     name
   }
 }
 
-query GetPost {
+query GetPost1 {
+  post(id: "1") {
+    id
+    title
+  }
+}
+
+query GetUser2 {
+  user(id: "1") {
+    id
+    name
+  }
+}
+
+query GetPost2 {
+  post(id: "1") {
+    id
+    title
+  }
+}
+
+query GetUser3 {
+  user(id: "1") {
+    id
+    name
+  }
+}
+
+query GetPost3 {
+  post(id: "1") {
+    id
+    title
+  }
+}
+
+query GetUser4 {
+  user(id: "1") {
+    id
+    name
+  }
+}
+
+query GetPost4 {
+  post(id: "1") {
+    id
+    title
+  }
+}
+
+query GetUser5 {
+  user(id: "1") {
+    id
+    name
+  }
+}
+
+query GetPost5 {
+  post(id: "1") {
+    id
+    title
+  }
+}
+
+query GetUser6 {
+  user(id: "1") {
+    id
+    name
+  }
+}
+
+query GetPost6 {
+  post(id: "1") {
+    id
+    title
+  }
+}
+
+query GetUser7 {
+  user(id: "1") {
+    id
+    name
+  }
+}
+
+query GetPost7 {
+  post(id: "1") {
+    id
+    title
+  }
+}
+
+query GetUser8 {
+  user(id: "1") {
+    id
+    name
+  }
+}
+
+query GetPost8 {
   post(id: "1") {
     id
     title

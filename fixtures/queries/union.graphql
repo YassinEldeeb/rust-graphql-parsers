@@ -9,5 +9,22 @@
       title
       content
     }
+    ... on Comment {
+      id
+      content
+    }
+    ... on Product {
+      id
+      name
+      price
+    }
+    ... on Order {
+      id
+      totalAmount
+    }
+    ... on Event {
+      id
+      name
+    }
   }
 }
