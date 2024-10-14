@@ -1,4 +1,4 @@
-# [Something] Benchmarks 
+# GraphQL Parsers Benchmarks 
 
 > Note: benchmarks are ran within GitHub CI which might introduce a bit of noise.
 
