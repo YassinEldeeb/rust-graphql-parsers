@@ -4,7 +4,6 @@
 
 | Case | async-graphql-parser | graphql_query (Stellate) | graphql-parser |
 |------|------ | ------ | ------|
-
 | nested.graphql | 0 | 9.1897 | 16.123 |
 | subscription.graphql | 0 | 8.3642 | 12.153 |
 | interfaces.graphql | 0 | 8.3554 | 11.886 |
