@@ -1,0 +1,21 @@
+{
+  user(id: "1") {
+    id
+    name
+    email
+    friends: bestFriends {
+      id
+      name
+      friends {
+        name
+      }
+    }
+  }
+  posts {
+    title
+    author {
+      name
+      email
+    }
+  }
+}

@@ -1,0 +1,24 @@
+type Query {
+  product(id: ID!): Product
+  user(id: ID!): User
+}
+
+type Product {
+  id: ID!
+  name: String
+  description: String
+  reviews: [Review]
+}
+
+type Review {
+  id: ID!
+  content: String
+  rating: Int
+  reviewer: User
+}
+
+type User {
+  id: ID!
+  name: String
+  age: Int
+}

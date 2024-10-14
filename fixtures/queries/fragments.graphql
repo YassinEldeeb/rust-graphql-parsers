@@ -1,0 +1,43 @@
+{
+  product(id: "123") {
+    ...ProductFields
+    reviews {
+      ...ReviewFields
+    }
+  }
+  user(id: "456") {
+    ...UserFields
+    friends {
+      ...UserFriendFields
+    }
+  }
+}
+
+fragment ProductFields on Product {
+  id
+  name
+  description
+}
+
+fragment ReviewFields on Review {
+  content
+  rating
+  reviewer {
+    ...UserFields
+  }
+}
+
+fragment UserFields on User {
+  id
+  name
+  age
+}
+
+fragment UserFriendFields on User {
+  id
+  name
+  friends {
+    id
+    name
+  }
+}

@@ -1,0 +1,6 @@
+query GetUser($shouldInclude: Boolean!) {
+  user(id: "1") {
+    id
+    name @include(if: $shouldInclude)
+  }
+}

@@ -1,0 +1,28 @@
+{
+  __schema {
+    queryType {
+      name
+    }
+    mutationType {
+      name
+    }
+    subscriptionType {
+      name
+    }
+    types {
+      name
+      fields {
+        name
+        args {
+          name
+          type {
+            name
+          }
+        }
+        type {
+          name
+        }
+      }
+    }
+  }
+}

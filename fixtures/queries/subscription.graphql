@@ -1,0 +1,9 @@
+subscription {
+  messageReceived {
+    id
+    content
+    sender {
+      name
+    }
+  }
+}

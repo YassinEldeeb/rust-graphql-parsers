@@ -1,0 +1,59 @@
+type Query {
+  user(id: ID!): User
+  product(id: ID!): Product
+  allUsers: [User]
+  allProducts: [Product]
+}
+
+type Mutation {
+  createUser(input: CreateUserInput!): User
+  updateUser(id: ID!, input: UpdateUserInput!): User
+  deleteUser(id: ID!): Boolean
+}
+
+type Subscription {
+  userCreated: User
+  productUpdated: Product
+}
+
+type User {
+  id: ID!
+  name: String
+  email: String
+  age: Int
+  friends: [User]
+}
+
+type Product {
+  id: ID!
+  name: String
+  price: Float
+  reviews: [Review]
+}
+
+type Review {
+  id: ID!
+  content: String
+  rating: Int
+  author: User
+}
+
+input CreateUserInput {
+  name: String!
+  email: String!
+  age: Int
+}
+
+input UpdateUserInput {
+  name: String
+  email: String
+  age: Int
+}
+
+enum ProductCategory {
+  ELECTRONICS
+  CLOTHING
+  FURNITURE
+}
+
+scalar DateTime

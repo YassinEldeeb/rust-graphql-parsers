@@ -1,0 +1,13 @@
+{
+  search {
+    ... on User {
+      id
+      name
+    }
+    ... on Post {
+      id
+      title
+      content
+    }
+  }
+}

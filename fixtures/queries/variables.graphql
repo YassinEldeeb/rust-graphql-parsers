@@ -1,0 +1,73 @@
+query ComplexUserQuery(
+  $userId1: ID!
+  $userId2: ID!
+  $userId3: ID!
+  $userId4: ID!
+  $userId5: ID!
+  $userId6: ID!
+  $userId7: ID!
+  $userId8: ID!
+  $userId9: ID!
+  $userId10: ID!
+  $userName1: String!
+  $userName2: String!
+  $userName3: String!
+  $userName4: String!
+  $userName5: String!
+  $userName6: String!
+  $userName7: String!
+  $userName8: String!
+  $userName9: String!
+  $userName10: String!
+  $userAge1: Int
+  $userAge2: Int
+  $userAge3: Int
+  $userAge4: Int
+  $userAge5: Int
+  $userAge6: Int
+  $userAge7: Int
+  $userAge8: Int
+  $userAge9: Int
+  $userAge10: Int
+) {
+  user1: user(id: $userId1, name: $userName1, age: $userAge1) {
+    id
+    name
+  }
+  user2: user(id: $userId2, name: $userName2, age: $userAge2) {
+    id
+    name
+  }
+  user3: user(id: $userId3, name: $userName3, age: $userAge3) {
+    id
+    name
+  }
+  user4: user(id: $userId4, name: $userName4, age: $userAge4) {
+    id
+    name
+  }
+  user5: user(id: $userId5, name: $userName5, age: $userAge5) {
+    id
+    name
+  }
+  user6: user(id: $userId6, name: $userName6, age: $userAge6) {
+    id
+    name
+  }
+  user7: user(id: $userId7, name: $userName7, age: $userAge7) {
+    id
+    name
+  }
+  user8: user(id: $userId8, name: $userName8, age: $userAge8) {
+    id
+    name
+  }
+  user9: user(id: $userId9, name: $userName9, age: $userAge9) {
+    id
+    name
+  }
+  user10: user(id: $userId10, name: $userName10, age: $userAge10) {
+    id
+    name
+  }
+}
