@@ -82,7 +82,7 @@ fn generate_readme(
     rust_output: &str,
 ) -> String {
     let tool_names = vec![
-        "async-graphql-parser",
+        "asyync-graphql-parser",
         "graphql_query (Stellate)",
         "graphql-parser",
     ];
