@@ -114,7 +114,7 @@ fn generate_readme(
     format!(
         "# GraphQL Parsers Benchmarks \n\n\
         > Note: benchmarks are ran within GitHub CI which might introduce a bit of noise.\n\n\
-        {}\n{}\n\n\
+        {}{}\n\n\
         ![Benchmark Bar Chart (Microseconds)]({})\n\n\
         ![Benchmark Bar Chart (Milliseconds)]({})\n\n\
         <details><summary>Click to expand logs</summary>\n\n\
